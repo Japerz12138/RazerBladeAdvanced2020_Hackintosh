@@ -1,5 +1,8 @@
 # Razer Blade 15 Advanced 2020 Hackintosh
-First of all, note that there will not be any tutorials here, but it will provide EFI and what I noticed when installing Hackintosh using OpenCore. Please refer to the configuration table below to make sure your Razer Blade configuration is the same as mine. Before using my EFI, be careful not to copy and paste directly, edit your own config.plist in advance. Back up your important data and check it step by step according to the official __[OpenCore](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html#prerequisites)__  tutorial. good luck.
+![About This Mac](Images/SystemInfo.jpg)
+
+## Intro
+First of all, note that there will not be any tutorials here, but it will provide EFI and what I noticed when installing Hackintosh using OpenCore. Please refer to the configuration table below to make sure your Razer Blade configuration is the same as mine. Before using my EFI, be careful not to copy and paste directly, edit your own config.plist in advance. Back up your important data and check it step by step according to the official __[OpenCore](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html#prerequisites)__  tutorial. Good luck.
 
 ## Hardware
 **Razer Blade 15 Advanced Model (Early 2020)**
@@ -20,3 +23,9 @@ First of all, note that there will not be any tutorials here, but it will provid
 | | Thunderbolt 3 (USB-C) | OK |
 | | HDMI |NO - HDMI connected directly to Nvidia GPU and will not work in macOS |
 | Power | 230W Power Adapter | OK |
+
+## About Sound
+This is the problem that has bothered me for the longest time. I tried a lot of ALC Layout ID, and finally `Layout ID 42` is available on my computer. Both speakers and microphones can be used. I tested the speakers with other IDs and couldn't be used. But note that this is only the case of my laptop, yours may be a little different. So if you cannot use the speaker when you set the ALC Layout ID to 42, please try: 3, 11, 13, 16, 21, 22, 28, 29, 30, 32, 47, 66, 72, 99. The detailed ALC configuration can refer to here: __[AppleALC Supported Codecs](https://github.com/acidanthera/AppleALC/wiki/Supported-codecs)__
+
+## About macOS Monterey (11.7)
+I was planning to install Monterey at the beginning, but I kept getting stuck at boot. Maybe I don’t have a suitable EFI. But when using this EFI, I recommend using **macOS Big Sur**.
