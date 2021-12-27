@@ -29,3 +29,9 @@ This is the problem that has bothered me for the longest time. I tried a lot of 
 
 ## About macOS Monterey (11.7)
 I was planning to install Monterey at the beginning, but I kept getting stuck at boot. Maybe I don’t have a suitable EFI. But when using this EFI, I recommend using **macOS Big Sur**.
+
+## About BIOS
+To be honest, I see that many other Razer Blade machines need to unlock the BIOS and change the SAC. I also tried to do it, but there is no way to unlock the System Agent Configuration on this machine. But I continued to try to install macOS, and finally succeeded. That is to say, for this machine, it does not matter if the DVMT Pre-Allocated is not adjusted to 64M.
+
+## Conclusion
+I really didn't expect that I would install macOS on my machine, just because I wanted to use xcode. Although it was a bit difficult, it was still successful and I am very satisfied. This work requires time and patience, so when you encounter any problems, it is very helpful to see OpenCore troubleshooting. Finally, although I have provided the EFI file, it does not mean that I will be responsible for your actions. If your machine has any problems or malfunctions during installation, I will not be responsible for it, so use this EFI at your own risk! Good luck, sharing your success to others may be able to help a lot!
