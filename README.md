@@ -27,7 +27,7 @@ First of all, note that there will not be any tutorials here, but it will provid
 ## About Sound
 This is the problem that has bothered me for the longest time. I tried a lot of ALC Layout ID, and finally `Layout ID 47` is available on my computer. Both speakers and microphones can be used. I tested the speakers with other IDs and couldn't be used. But note that this is only the case of my laptop, yours may be a little different. So if you cannot use the speaker when you set the ALC Layout ID to 47, please try: 3, 11, 13, 16, 21, 22, 28, 29, 30, 32, 47, 66, 72, 99. The detailed ALC configuration can refer to here: __[AppleALC Supported Codecs](https://github.com/acidanthera/AppleALC/wiki/Supported-codecs)__
 
-## About macOS Monterey (11.7)
+## About macOS Monterey (12.1)
 I was planning to install Monterey at the beginning, but I kept getting stuck at boot. Maybe I don’t have a suitable EFI. But when using this EFI, I recommend using **macOS Big Sur**.
 
 ## About BIOS
