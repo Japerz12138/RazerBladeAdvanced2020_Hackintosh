@@ -20,7 +20,7 @@ First of all, note that there will not be any tutorials here, but it will provid
 | TouchPad | Precision Glass | OK |
 | Keyboard | Per-key RGB Powered by Razer Chroma N-Key rollover backlit | OK - But no razer software for macOS - Backlit control works good) |
 | Port | USB 3.1 | OK |
-| | Thunderbolt 3 (USB-C) | OK |
+| | Thunderbolt 3 (USB-C) | OK - But seems like external display still not going to work. |
 | | HDMI |NO - HDMI connected directly to Nvidia GPU and will not work in macOS |
 | Power | 230W Power Adapter | OK |
 
