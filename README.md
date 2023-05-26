@@ -1,5 +1,5 @@
-# Razer Blade 15 Advanced 2020 Hackintosh
-![About This Mac](Images/SystemInfo.jpg)
+# Razer Blade 15 Advanced 2020 Hackintosh macOS Ventura (13.4)
+![About This Mac](Images/SystemInfo_Ventura.png)
 
 ## Intro
 First of all, note that there will not be any tutorials here, but it will provide EFI and what I noticed when installing Hackintosh using OpenCore. Please refer to the configuration table below to make sure your Razer Blade configuration is the same as mine. Before using my EFI, be careful not to copy and paste directly, edit your own config.plist in advance. Back up your important data and check it step by step according to the official __[OpenCore](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html#prerequisites)__  tutorial. Good luck.
@@ -27,8 +27,11 @@ First of all, note that there will not be any tutorials here, but it will provid
 ## About Sound
 This is the problem that has bothered me for the longest time. I tried a lot of ALC Layout ID, and finally `Layout ID 47` is available on my Razer Blade. Both speakers and microphones are working. I tested the speakers with other IDs and couldn't be used. But note that this is only the case of my laptop, yours may be a little different. So if you cannot use the speaker when you set the ALC Layout ID to 47, please try: 3, 11, 13, 16, 21, 22, 28, 29, 30, 32, 47, 66, 72, 99. The detailed ALC configuration can refer to here: __[AppleALC Supported Codecs](https://github.com/acidanthera/AppleALC/wiki/Supported-codecs)__
 
-## About macOS Monterey (12.1)
-I was planning to install Monterey at the beginning, but I kept getting stuck at boot. Maybe I don’t have a suitable EFI. But when using this EFI, I recommend using **macOS Big Sur**.
+~~## About macOS Monterey (12.1)~~
+~~I was planning to install Monterey at the beginning, but I kept getting stuck at boot. Maybe I don’t have a suitable EFI. But when using this EFI, I recommend using **macOS Big Sur**.~~
+
+## About update to Ventura (13.4)
+This EFI has been updated to support macOS Ventura (13.4). Problem is the bluetooth stops working after update from Big Sur. Planning to swap the Intel wireless wifi card to an broadcom one to support both bluetooth and AirDrop. If you want to make changes, I recommanded use [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools) with [OpenCoreConfigurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
 
 ## About BIOS
 To be honest, I see that many other Razer Blade machines need to unlock the BIOS and change the SAC. I also tried to do it, but there is no way to unlock the System Agent Configuration on this machine. But I continued to try to install macOS, and finally succeeded. That is to say, for this machine, it seems like no matter if the DVMT Pre-Allocated is not adjusted to 64M, the installation can go on.
