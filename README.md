@@ -33,6 +33,12 @@ This is the problem that has bothered me for the longest time. I tried a lot of 
 ## About update to Ventura (13.4)
 This EFI has been updated to support macOS Ventura (13.4). Problem is the bluetooth stops working after update from Big Sur. Planning to swap the Intel wireless wifi card to an broadcom one to support both bluetooth and AirDrop. If you want to make changes, I recommanded use [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools) with [OpenCoreConfigurator](https://mackie100projects.altervista.org/download-opencore-configurator/)
 
+## About macOS Sonoma (14)
+As of the update of this document, if you have a Broadcom network card installed like me, it is not recommended to update. Now only use OCLP (Open Core Legacy Patcher) and use **IOSkywalkFamily.kext** and **IO80211FamilyLegacy.kext** to use Wifi network normally. But the current test is unstable and relies on OCLP, which is supposed to be used on older Apple devices. If you plan to upgrade from Ventura to Sonoma anyway, please refer to this URL [https://github.com/5T33Z0/OC-Little-Translated/blob/main/14_OCLP_Wintel/WIiFi_Sonoma.md#2-config-and-efi-adjustments](https://github.com/5T33Z0/OC-Little-Translated/blob/main/14_OCLP_Wintel/WIiFi_Sonoma.md#2-config-and-efi-adjustments) .
+Unless you file an issue with this repo to request an update, this repo will not be updated until there is a real solution to support Broadcom network cards.
+
+If you use a wireless network card such as Intel AX201, there should be no wifi problems when using AirportItlwm. Please refer to [itlwm](https://github.com/OpenIntelWireless/itlwm).
+
 ## About BIOS
 To be honest, I see that many other Razer Blade machines need to unlock the BIOS and change the SAC. I also tried to do it, but there is no way to unlock the System Agent Configuration on this machine. But I continued to try to install macOS, and finally succeeded. That is to say, for this machine, it seems like no matter if the DVMT Pre-Allocated is not adjusted to 64M, the installation can go on.
 
